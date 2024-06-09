@@ -17,6 +17,7 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    //"isolatedModules": true, me tocó cambiar esto a false pero luego en el run se cambió a true de nuevo
     "isolatedModules": true,
     "plugins": [
       {
@@ -24,7 +25,9 @@
       }
     ],
     "paths": {
-      "react": ["./node_modules/@types/react"],
+      "react": [
+        "./node_modules/@types/react"
+      ]
     }
   },
   "include": [
