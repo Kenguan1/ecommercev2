@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-const ContentSecurityPolicy = require('./csp')
-const redirects = require('./redirects')
+import ContentSecurityPolicy from './csp'
+import redirects from './redirects'
 
 const nextConfig = {
   typescrypt : {
@@ -50,4 +50,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+export default nextConfig
