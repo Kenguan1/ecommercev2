@@ -50,5 +50,12 @@ const nextConfig = {
   },
 }
 
-//module.exports = nextConfig
-module.exports = withPluginA(withPluginB(withPluginC(myNextConfig)));
+module.exports = nextConfig
+
+/*
+module.exports = (phase, { defaultConfig }) => {
+  return withBundleAnalyzer(defaultConfig);
+};
+*/
+
+//module.exports = withPluginPrettier(myNextConfig);
