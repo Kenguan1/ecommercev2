@@ -50,4 +50,5 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+//module.exports = nextConfig
+module.exports = withPluginA(withPluginB(withPluginC(myNextConfig)));
