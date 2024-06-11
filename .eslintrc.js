@@ -2,11 +2,9 @@ module.exports = {
   root: true,
   extends: ['plugin:@next/next/recommended', '@payloadcms'],
   ignorePatterns: ['**/payload-types.ts'],
-  plugins: ['prettier', 'simple-import-sort'],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    'simple-import-sort/imports': ['error'],
     'no-console': 'off',
   },
-  
 }
