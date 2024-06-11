@@ -53,6 +53,12 @@ const nextConfig = {
 module.exports = nextConfig
 
 /*
+module.exports = (_phase, { defaultConfig }) => {
+  const plugins = [withStaticImport, withBundleAnalyzer, withCustomWebpack]
+  return plugins.reduce((acc, prettier) => prettier(acc), { ...defaultConfig, ...config })
+}
+*/
+/*
 module.exports = (phase, { defaultConfig }) => {
   return withBundleAnalyzer(defaultConfig);
 };
